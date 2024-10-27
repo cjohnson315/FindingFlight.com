@@ -1,0 +1,414 @@
+:root{
+    --arctic:#0d2740;
+    --darkarctic: #001222;
+    --cappuccino: #ffe8ce;
+    --citrus: #feb65a;
+
+    /*
+    --originalcitrus: #febc5a;
+    --sunset: #fe8b5a;
+    --supercub: #fe5a5a;
+    */
+}
+
+body {
+    background-color: var(--arctic);
+    font-family: "Oswald";
+}
+
+
+/*Header Container*/
+div.header {
+    background: url(Images/HeaderPlaceholder.jpg) #00000046;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-blend-mode: overlay;
+}
+
+/*Navbar*/
+    /*logo*/
+img.logo {
+    height: 18%;
+    width: 18%;
+    min-height: 7rem;
+    min-width: 10rem;
+}
+    /*navigation menu*/
+ul.navbar-nav {
+    display: inline-flex;
+}
+a.nav-link {
+    color: var(--cappuccino);
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;
+    text-wrap: nowrap;
+}
+    /*hamburger specific*/
+.navbar-collapse {
+    position: absolute right;
+}
+
+.navbar-toggler {
+border-color: transparent;
+}
+
+.fa-bars {
+    color: var(--cappuccino);
+}
+
+/*Header Banner*/
+.header-banner {
+    color: var(--cappuccino);
+    margin-left: 2rem;
+    text-wrap: nowrap;
+    font-size: 3rem;
+}
+
+strong.header {
+    color: var(--citrus);
+    font-weight: bolder;
+}
+
+a.header-banner { 
+    background-color: transparent; 
+    border: 2px solid var(--cappuccino); 
+    margin-top: 2rem;
+    display: block; 
+    width: 10rem;
+    border-radius: 12px;
+    color: var(--cappuccino); 
+    text-align: center; 
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.2rem; 
+}
+
+@media (max-width: 768px) {
+    .header-banner {
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    strong.header {
+        color: var(--citrus);
+        font-weight: bolder;
+    }
+    
+    a.header-banner { 
+        justify-self: center;
+    }
+}
+
+/*Services Section*/
+/*containers*/
+div.serviceswrap {
+    background-color: var(--arctic);
+    min-height: 30rem;
+    text-align: center;
+    padding-top: 0.75rem;
+}
+
+div.servicesrow {
+    background-color: var(--darkarctic);
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: 0.1rem;
+}
+
+div.services {
+    padding: 3rem;
+}
+
+@media (max-width: 768px) {
+    div.services {
+        padding: 1rem;
+    }
+
+    h3.services {
+        padding-bottom: 2rem;
+    }
+}
+
+/*title*/
+h3.services {
+    color: var(--citrus);
+    font-size: 3rem;
+    padding-top: 3rem;
+}
+
+p.services {
+    color: var(--cappuccino);
+    line-height: 2rem;
+}
+
+img.services {
+    height: 26rem;
+    width: 23rem;
+    object-fit:cover;
+    object-position: center;
+}
+
+a.services {
+    text-decoration: none;
+}
+
+/*instruction*/
+h1.instruction {
+    color: var(--citrus);
+    font-size: 2.2rem;
+    padding-top: 0.5rem;
+}
+
+/*adventure*/
+h1.adventure {
+    color: var(--citrus);
+    font-size: 2.2rem;
+    padding-top: 0.5rem;
+}
+
+/*a&p*/
+h1.anp {
+    color: var(--citrus);
+    font-size: 2.2rem;
+    padding-top: 0.5rem;
+}
+
+
+/*About Us Section*/
+
+/*containers*/
+div.about {
+    padding: 1rem;
+    padding-bottom: 0.2rem;
+}
+
+/*video embed*/
+div.aboutvideo {
+    height: 30rem;
+}
+
+iframe.aboutvideo {
+    width: 100%;
+    height: 100%;
+}
+
+/*text section*/
+div.abouttext {
+    padding-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    div.abouttext {
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    a.about {
+        background-color: transparent; 
+        border: 2px solid var(--cappuccino); 
+        margin-top: 2rem;
+        display: block; 
+        width: 10rem;
+        border-radius: 12px;
+        color: var(--cappuccino); 
+        text-align: center; 
+        text-decoration: none;
+        padding: 1rem;
+        font-size: 1.2rem; 
+        justify-self: center;
+    }
+}
+
+h3.about {
+    color: var(--citrus);
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+p.about {
+    color: var(--cappuccino);
+    line-height: 2rem;
+}
+
+a.about {
+    background-color: transparent; 
+    border: 2px solid var(--citrus); 
+    margin-top: 2rem;
+    display: block; 
+    width: 10rem;
+    border-radius: 12px;
+    color: var(--citrus); 
+    text-align: center; 
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.2rem; 
+}
+
+/*Testimonials*/
+/*containers*/
+div.testimonialswrap {
+    background-color: var(--arctic);
+    text-align: center;
+    padding-top: 0.75rem;
+}
+
+div.testimonialsrow {
+    background-color: var(--darkarctic);
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: 0.1rem;
+}
+
+div.testimonials {
+    padding: 3rem;
+}
+
+@media (max-width: 768px) {
+    div.services {
+        padding: 1rem;
+    }
+
+    h3.services {
+        padding-bottom: 2rem;
+    }
+}
+
+/*title*/
+h3.testimonials {
+    color: var(--citrus);
+    font-size: 3rem;
+    padding-top: 3rem;
+}
+
+/*reviews*/
+p.review {
+    color: var(--cappuccino);
+    font-size: 1.8rem;
+}
+
+/*Footer*/
+/*containers*/
+.footer {
+    align-items: center;
+    color: var(--cappuccino);
+}
+
+div.footercopyright {
+    text-align: right;
+}
+
+div.footerbrand {
+    text-align: center;
+}
+
+div.footersocials {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    div.footercopyright {
+        text-align: center;
+    }
+
+    div.footersocials {
+        text-align: center;
+    }
+}
+
+/*copyright*/
+p.copyright {
+    font-size: 1.2rem;
+}
+
+/*socials*/
+ul.socials {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+a.socials {
+    color: var(--cappuccino);
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-align: center;
+    text-wrap: nowrap;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+/* Contact Us Page*/
+/*containers*/
+
+div.headercontact {
+    background-color: var(--arctic);
+}
+
+div.contactwrap {
+    background-color: var(--arctic);
+    min-height: 30rem;
+    text-align: center;
+    padding-top: 0.75rem;
+}
+
+div.contactrow {
+    background-color: var(--darkarctic);
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: 0.1rem;
+}
+
+/*contact info*/
+div.contact {
+    padding: 3rem;
+    color: var(--citrus);
+}
+
+h3.contact {
+    color: var(--citrus);
+    font-size: 3rem;
+}
+
+div.map {
+    height: 20rem;
+    padding: 1rem;
+}
+
+iframe.map {
+    width: 100%;
+    height: 100%;
+}
+
+/*form*/
+div.contactform {
+    padding: 3rem;
+    color: var(--cappuccino);
+    text-align: left;
+}
+
+button.submit {
+    background-color: transparent; 
+    border: 2px solid var(--citrus); 
+    margin-top: 2rem;
+    display: block; 
+    width: 10rem;
+    border-radius: 12px;
+    color: var(--citrus); 
+    text-align: center; 
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.2rem; 
+    justify-self: center;
+}

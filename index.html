@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Flight</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/47b43f2c15.js" crossorigin="anonymous"></script>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Header-->
+    <div class="container-fluid header d-flex flex-column">
+
+        <!--Navbar-->
+        <!--Create navbar wrapper (required for bs navbar functionality)-->
+        <nav class="navbar navbar-expand-md">
+            <!--Create content container within navbar wrapper-->
+            <div class="container-fluid flex-nowrap">
+                <!--Add Finding Flight logo using bs brand class-->
+                <a class="navbar-brand"><img src="Images/LogoPlaceholder.png" class="logo p-3"></a>
+                <!--Create button for collapsible navbar menu-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <!--Create navigation menu within collapsible container-->
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto p-3">
+                        <li class="nav-item"><a href="#self" class="nav-link">HOME</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link">SERVICES</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
+                        <li class="nav-item"><a href="contact" class="nav-link">CONTACT US</a></li>
+                    </ul>
+                </div> 
+            </div>
+        </nav>
+
+        <!--Add banner hero text section to header-->
+        <div class="row align-items-center flex-grow-1">
+            <div class="col-md-5">
+                <h1 class="header-banner">DISCOVER YOUR <strong class="header">PASSION</strong><br />FOR 
+                    <strong class="header">AVIATION</strong></h1>
+                <a href="contact" class="button header-banner">FIND OUT HOW</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--Services Section-->
+    <div id="services" class="container-fluid serviceswrap d-flex flex-column">
+        <div class ="row servicesrow align-items-center">
+            <a href="#services" class="services"><h3 class="services">WHAT CAN FINDING FLIGHT DO FOR YOU?</h3></a>
+            <div class="col-md-4 services align-self-start">
+                <a href="#services" class="services"><img class="img-fluid services" src="Images/InstructingPlaceholder.jpg">
+                    <span><h1 class="instruction">FLIGHT INSTRUCTION</h1></span>
+                </a>
+                <p class="services">Discover your potential and achieve your piloting dreams with custom-tailored, 
+                    individualized tailwheel instruction from our world-class Certified Flight Instructor</p>
+            </div>
+            <div class="col-md-4 services align-self-start">
+                <a href="#services" class="services"><img class="img-fluid services" src="Images/AdventurePlaceholder.jpg">
+                    <span><h1 class="adventure">ADVENTURE FLIGHTS</h1></span>
+                </a>
+                <p class="services">Experience the magic of flight and the majesty of the world-famous DFW skyline in 
+                    a captivating adventure through the sky guided by our expert pilot</p>
+            </div>
+            <div class="col-md-4 services align-self-start">
+                <a href="#services" class="services"><img class="img-fluid services" src="Images/A&PPlaceholder.jpg">
+                    <span><h1 class="anp">A&P SERVICES</h1></span>
+                </a>
+                <p class="services">Engine trouble got you down and downed? Wing dents ruining your Instagram shots? Trust
+                    our reliable, experienced mechanic to handle all your aircraft woes</p>
+            </div>
+        </div>
+    </div>
+
+    <!--About-->
+    <div class="container-fluid about d-flex flex-column">
+        <div class="row aboutrow align-items-center">
+            <div class="col-md-6 aboutvideo">
+                <div class="embed-responsive aboutvideo embed-responsive-16by9">
+                    <iframe class="embed-responsive-item aboutvideo" src="https://www.youtube.com/embed/WMrV3OZ6tjM" allowfullscreen></iframe>
+                  </div>
+            </div>
+            <div class="col-md-6 abouttext">
+                <h3 class="about">ABOUT US</h3>
+                <p class="about">Finding Flight is a family owned and operated flight services company based out of Aero Valley Airport 
+                    (52F) in Roanoke, Texas. We strive to help others experience the magic of aviation through high-quality customer
+                    experiences, from flight instruction to A&P services. We are passionate about all things aviation, and have
+                    made it our mission to help ignite that same passion in others.
+                </p>
+                <a href="#about" class="button about">LEARN MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Testimonials-->
+    <div id="testimonials" class="container-fluid testimonialswrap d-flex flex-column">
+        <div class ="row testimonialsrow align-items-center">
+            <h3 class="testimonials">TESTIMONIALS</h3>
+            <div class="col-md-12 testimonials align-self-start">
+                <div id="reviewscarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <p class="review">"I'm not a flight instructor. But if I were a flight instructor, I'd be the second-best
+                            flight instructor in the world."</p>
+                        <p class="review">-Donald J. Trump</p>
+                      </div>
+                      <div class="carousel-item">
+                        <p class="review">"Small-Town Tall Guy Makes Big Waves in Aviation: Isaac Johnson to be Voted Pilot 
+                            of the Year"</p>
+                        <p class="review">-The New York Times</p>
+                      </div>
+                      <div class="carousel-item">
+                        <p class="review">"Isaac is the best pilot and flight instructor in the world!"</p>
+                        <p class="review">-Isaac's Wife</p>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#reviewscarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#reviewscarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid footer d-flex flex-column">
+        <footer>
+            <div class="row footer align-items-center">
+                <div class="col-md-4 footercopyright">
+                    <p class="copyright">© 2024 Finding Flight, LLC</p>
+                </div>
+                <div class="col-md-4 footerbrand">
+                    <a class="footerbrand"><img src="Images/LogoPlaceholder.png" class="logo p-3"></a>
+                </div>
+                <div class="col-md-4 footersocials">
+                    <ul class="socials">
+                        <li class="socials">
+                            <a href="https://www.instagram.com/findingflightaviation/" class="socials"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="socials">
+                            <a href="https://www.instagram.com/findingflightaviation/" class="socials"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li class="socials">
+                            <a href="https://www.instagram.com/findingflightaviation/" class="socials"><i class="fa-brands fa-tiktok"></i></a></li>
+                        <li class="socials">
+                            <a href="https://www.facebook.com/people/FindingFlight/61567766007234/?name=xhp_nt__fb__action__open_user" class="socials"><i class="fa-brands fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

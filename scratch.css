@@ -1,0 +1,68 @@
+:root{
+    --arctic:#0d2740;
+    --cappuccino: #ffe8ce;
+    --supercub: #fe5a5a;
+    --sunset: #fe8b5a;
+    --citrus: #febc5a;
+}
+
+body {
+    background-color: var(--arctic);
+}
+
+
+/*Header Container*/
+div.header {
+    background: url(Images/HeaderPlaceholder.jpg) #00000046;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-blend-mode: overlay;
+}
+
+/*Navbar*/
+
+    /*logo*/
+img.logo {
+    height: 20%;
+    width: 20%;
+    min-height: 5rem;
+    min-width: 8rem;
+}
+    /*navigation menu*/
+ul.navbar-nav {
+    display: inline-flex;
+}
+a.nav-link {
+    color: var(--cappuccino);
+    text-decoration: none;
+    text-align: center;
+    text-wrap: nowrap;
+}
+    /*hamburger specific*/
+.navbar-collapse {
+    position: absolute right;
+}
+.navbar-toggler {
+border-color: transparent;
+}
+.fa-bars {
+    color: var(--cappuccino);
+}
+
+/*Header Banner*/
+.header-banner {
+    color: var(--cappuccino);
+    margin-left: 2rem;
+}
+
+strong.header-1 {
+    color: var(--supercub);
+    font-weight: bolder;
+}
+
+strong.header-2 {
+    color: var(--sunset);
+    font-weight: bolder;
+}
