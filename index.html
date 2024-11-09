@@ -21,10 +21,11 @@
         <!--Navbar-->
         <!--Create navbar wrapper (required for bs navbar functionality)-->
         <nav class="navbar navbar-expand-md">
-            <!--Create content container within navbar wrapper-->
-            <div class="container-fluid flex-nowrap">
+            <div class="container-fluid navbar-brand col-md-4 flex-nowrap">
                 <!--Add Finding Flight logo using bs brand class-->
-                <a class="navbar-brand"><img src="Images/LogoPlaceholder.png" class="logo p-3"></a>
+                <a class="navbar-brand"><img src="Images/LogoPlaceholder.png" class="logo"></a>
+            </div>
+            <div class="container-fluid navbar-menu col-md-8 flex">
                 <!--Create button for collapsible navbar menu-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                     <i class="fa-solid fa-bars"></i>
@@ -39,7 +40,7 @@
                     </ul>
                 </div> 
             </div>
-        </nav>
+        </nav>   
 
         <!--Add banner hero text section to header-->
         <div class="row align-items-center flex-grow-1">

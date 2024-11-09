@@ -28,14 +28,24 @@ div.header {
 }
 
 /*Navbar*/
-    /*logo*/
+
+@media (max-width: 768px) {
+    div.navbar-brand {
+        text-align: center;
+        justify-self: center;
+    }
+    div.navbar-menu {
+        text-align: center;
+    }
+}
+        
 img.logo {
     height: 18%;
     width: 18%;
     min-height: 7rem;
     min-width: 10rem;
 }
-    /*navigation menu*/
+
 ul.navbar-nav {
     display: inline-flex;
 }
@@ -47,12 +57,8 @@ a.nav-link {
     text-wrap: nowrap;
 }
     /*hamburger specific*/
-.navbar-collapse {
-    position: absolute right;
-}
-
 .navbar-toggler {
-border-color: transparent;
+    border-color: transparent;
 }
 
 .fa-bars {
