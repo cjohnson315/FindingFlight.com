@@ -28,16 +28,6 @@ div.header {
 }
 
 /*Navbar*/
-
-@media (max-width: 768px) {
-    div.navbar-brand {
-        text-align: center;
-        justify-self: center;
-    }
-    div.navbar-menu {
-        text-align: center;
-    }
-}
         
 img.logo {
     height: 18%;
@@ -65,23 +55,40 @@ a.nav-link {
     color: var(--cappuccino);
 }
 
+/*Medium to Small Screens*/
+@media (max-width: 768px) {
+    div.navbar-brand {
+        text-align: center;
+        justify-self: center;
+        margin-right: 0;
+    }
+    a.navbar-brand {
+        margin-right: 0;
+    }
+    div.navbar-menu {
+        text-align: center;
+    }
+    button.navbar-toggler {
+        margin: 0 auto;
+    }
+    a.nav-link {
+        font-size: 1.1rem;
+    }
+}
+
 /*Header Banner*/
-.header-banner {
+
+h1.header-banner {
     color: var(--cappuccino);
     margin-left: 2rem;
     text-wrap: nowrap;
     font-size: 3rem;
 }
-
-strong.header {
-    color: var(--citrus);
-    font-weight: bolder;
-}
-
 a.header-banner { 
     background-color: transparent; 
     border: 2px solid var(--cappuccino); 
     margin-top: 2rem;
+    margin-left: 2rem;
     display: block; 
     width: 10rem;
     border-radius: 12px;
@@ -92,18 +99,39 @@ a.header-banner {
     font-size: 1.2rem; 
 }
 
+strong.header {
+    color: var(--citrus);
+    font-weight: bolder;
+}
+
+/*Medium Screens*/
 @media (max-width: 768px) {
-    .header-banner {
+    h1.header-banner {
+        margin: 0 auto;
+        font-size: 2.8rem;
         text-align: center;
-        font-size: 2rem;
     }
-    
-    strong.header {
-        color: var(--citrus);
-        font-weight: bolder;
-    }
-    
     a.header-banner { 
+        margin-left: 0rem;
+        text-align: center; 
+        justify-self: center;
+    }
+}
+
+/*Small Screens*/
+@media (max-width: 576px) {
+    h1.header-banner {
+        margin: 0 auto;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    a.header-banner { 
+        margin-top: 1rem;
+        margin-left: 0rem;
+        width: 8rem;
+        text-align: center; 
+        padding: 1rem;
+        font-size: 1rem; 
         justify-self: center;
     }
 }
@@ -129,17 +157,17 @@ div.services {
     padding: 3rem;
 }
 
-@media (max-width: 768px) {
-    div.services {
+/*Small Screens*/
+@media (max-width: 576px) {
+    div.servicesrow {
         padding: 1rem;
-    }
-
-    h3.services {
-        padding-bottom: 2rem;
-    }
+   }
+   div.services {
+        padding: 0rem;
+   }
 }
 
-/*title*/
+/*text*/
 h3.services {
     color: var(--citrus);
     font-size: 3rem;
@@ -151,6 +179,45 @@ p.services {
     line-height: 2rem;
 }
 
+h1.services-list {
+    color: var(--citrus);
+    font-size: 2.2rem;
+    padding-top: 0.5rem;
+}
+
+a.services {
+    text-decoration: none;
+}
+
+/*Medium Screens*/
+@media (max-width: 768px) {
+    h3.services {
+        margin-bottom: 0.5rem;
+        font-size: 2.8rem;
+   }
+   h1.services-list {
+        font-size: 2.2rem;
+   }
+   p.services {
+    font-size: 1.2rem;
+   }
+}
+
+/*Small Screens*/
+@media (max-width: 576px) {
+    h3.services {
+        margin-bottom: 0.5rem;
+        font-size: 1.8rem;
+   }
+   h1.services-list {
+        font-size: 1.5rem;
+   }
+   p.services {
+    font-size: 1rem;
+   }
+}
+
+/*images*/
 img.services {
     height: 26rem;
     width: 23rem;
@@ -158,29 +225,12 @@ img.services {
     object-position: center;
 }
 
-a.services {
-    text-decoration: none;
+/*Small Screens*/
+@media (max-width: 576px) {
+img.services {
+    height: 16rem;
+    width: 15rem;
 }
-
-/*instruction*/
-h1.instruction {
-    color: var(--citrus);
-    font-size: 2.2rem;
-    padding-top: 0.5rem;
-}
-
-/*adventure*/
-h1.adventure {
-    color: var(--citrus);
-    font-size: 2.2rem;
-    padding-top: 0.5rem;
-}
-
-/*a&p*/
-h1.anp {
-    color: var(--citrus);
-    font-size: 2.2rem;
-    padding-top: 0.5rem;
 }
 
 
