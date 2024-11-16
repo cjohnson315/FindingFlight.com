@@ -16,16 +16,16 @@
 <body>
 
     <!--Header-->
-    <div class="container-fluid header d-flex flex-column">
+    <div id="header" class="container-fluid header d-flex flex-column">
 
         <!--Navbar-->
         <!--Create navbar wrapper (required for bs navbar functionality)-->
-        <nav class="navbar navbar-expand-md">
-            <div class="container-fluid navbar-brand col-md-4 flex-nowrap">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid navbar-brand col-lg-4 flex-nowrap">
                 <!--Add Finding Flight logo using bs brand class-->
                 <a class="navbar-brand"><img src="Images/LogoPlaceholder.png" class="logo"></a>
             </div>
-            <div class="container-fluid navbar-menu col-md-8 flex">
+            <div class="container-fluid navbar-menu col-lg-8 flex">
                 <!--Create button for collapsible navbar menu-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                     <i class="fa-solid fa-bars"></i>
@@ -43,8 +43,8 @@
         </nav>   
 
         <!--Add banner hero text section to header-->
-        <div class="row align-items-center flex-grow-1">
-            <div class="col-md-5 header-banner">
+        <div class="row align-items-end flex-grow-1">
+            <div class="col-lg-5 header-banner">
                 <h1 class="header-banner">DISCOVER YOUR <strong class="header">PASSION</strong><br />FOR 
                     <strong class="header">AVIATION</strong></h1>
                 <a href="contact" class="button header-banner">FIND OUT HOW</a>
@@ -58,21 +58,21 @@
             <div class="col-md-12" services align-self-start>
                 <a href="#services" class="services"><h3 class="services">WHAT CAN FINDING FLIGHT DO FOR YOU?</h3></a>
             </div>
-            <div class="col-lg-4 services align-self-start">
-                <a href="#services" class="services"><img class="img-fluid services" src="Images/InstructingPlaceholder.jpg">
+            <div class="col-xl-4 services align-self-start">
+                <a href="#services" class="services"><img class="img-fluid instruction" src="Images/InstructingPlaceholder.jpg">
                     <span><h1 class="services-list">FLIGHT INSTRUCTION</h1></span>
                 </a>
                 <p class="services">Discover your potential and achieve your piloting dreams with custom-tailored, 
                     individualized tailwheel instruction from our world-class Certified Flight Instructor</p>
             </div>
-            <div class="col-lg-4 services align-self-start">
+            <div class="col-xl-4 col-md-6 services align-self-start">
                 <a href="#services" class="services"><img class="img-fluid services" src="Images/AdventurePlaceholder.jpg">
                     <span><h1 class="services-list">ADVENTURE FLIGHTS</h1></span>
                 </a>
                 <p class="services">Experience the magic of flight and the majesty of the world-famous DFW skyline in 
                     a captivating adventure through the sky guided by our expert pilot</p>
             </div>
-            <div class="col-lg-4 services align-self-start">
+            <div class="col-xl-4 col-md-6 services align-self-start">
                 <a href="#services" class="services"><img class="img-fluid services" src="Images/A&PPlaceholder.jpg">
                     <span><h1 class="services-list">A&P SERVICES</h1></span>
                 </a>
@@ -143,7 +143,7 @@
                     <p class="copyright">© 2024 Finding Flight, LLC</p>
                 </div>
                 <div class="col-md-4 footerbrand">
-                    <a class="footerbrand"><img src="Images/LogoPlaceholder.png" class="logo p-3"></a>
+                    <a href=#header class="footerbrand"><img src="Images/LogoPlaceholder.png" class="logo p-3"></a>
                 </div>
                 <div class="col-md-4 footersocials">
                     <ul class="socials">

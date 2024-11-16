@@ -1,14 +1,8 @@
 :root{
     --arctic:#0d2740;
-    --darkarctic: #001222;
+    --lunar: #001222;
     --cappuccino: #ffe8ce;
     --citrus: #feb65a;
-
-    /*
-    --originalcitrus: #febc5a;
-    --sunset: #fe8b5a;
-    --supercub: #fe5a5a;
-    */
 }
 
 body {
@@ -27,8 +21,7 @@ div.header {
     background-blend-mode: overlay;
 }
 
-/*Navbar*/
-        
+/*Navbar*/    
 img.logo {
     height: 18%;
     width: 18%;
@@ -46,7 +39,8 @@ a.nav-link {
     text-align: center;
     text-wrap: nowrap;
 }
-    /*hamburger specific*/
+
+/*hamburger specific*/
 .navbar-toggler {
     border-color: transparent;
 }
@@ -55,7 +49,25 @@ a.nav-link {
     color: var(--cappuccino);
 }
 
-/*Medium to Small Screens*/
+/*large screens*/
+@media (max-width: 992px) {
+    div.navbar-brand {
+        text-align: center;
+        justify-self: center;
+        margin-right: 0;
+    }
+    a.navbar-brand {
+        margin-right: 0;
+    }
+    div.navbar-menu {
+        text-align: center;
+    }
+    button.navbar-toggler {
+        margin: 0 auto;
+    }
+}
+
+/*medium to small screens*/
 @media (max-width: 768px) {
     div.navbar-brand {
         text-align: center;
@@ -77,6 +89,9 @@ a.nav-link {
 }
 
 /*Header Banner*/
+div.header-banner {
+    padding-bottom: 8rem;
+}
 
 h1.header-banner {
     color: var(--cappuccino);
@@ -104,8 +119,27 @@ strong.header {
     font-weight: bolder;
 }
 
-/*Medium Screens*/
+/*large screens*/
+@media (max-width: 992px) {
+    div.header-banner {
+        padding-bottom: 6rem;
+    }
+    h1.header-banner {
+        margin: 0 auto;
+        text-align: center;
+    }
+    a.header-banner { 
+        margin-left: 0rem;
+        text-align: center; 
+        justify-self: center;
+    }
+}
+
+/*medium screens*/
 @media (max-width: 768px) {
+    div.header-banner {
+        padding-bottom: 4rem;
+    }
     h1.header-banner {
         margin: 0 auto;
         font-size: 2.8rem;
@@ -118,8 +152,11 @@ strong.header {
     }
 }
 
-/*Small Screens*/
+/*small screens*/
 @media (max-width: 576px) {
+    div.header-banner {
+        padding-bottom: 2rem;
+    }
     h1.header-banner {
         margin: 0 auto;
         font-size: 1.8rem;
@@ -146,7 +183,7 @@ div.serviceswrap {
 }
 
 div.servicesrow {
-    background-color: var(--darkarctic);
+    background-color: var(--lunar);
     padding: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -157,7 +194,14 @@ div.services {
     padding: 3rem;
 }
 
-/*Small Screens*/
+/*large screens*/
+@media (max-width: 1200px) {
+    div.services {
+        padding: 1.8rem;
+    }
+}
+
+/*small screens*/
 @media (max-width: 576px) {
     div.servicesrow {
         padding: 1rem;
@@ -177,6 +221,7 @@ h3.services {
 p.services {
     color: var(--cappuccino);
     line-height: 2rem;
+    font-size: 1.2rem;
 }
 
 h1.services-list {
@@ -189,7 +234,22 @@ a.services {
     text-decoration: none;
 }
 
-/*Medium Screens*/
+/*large screens*/
+@media (max-width: 1200px) {
+    h3.services {
+        font-size: 2.8rem;
+        margin: 0rem;
+        padding-bottom: 1rem;
+   }
+   h1.services-list {
+        font-size: 2.2rem;
+   }
+   p.services {
+    font-size: 1.2rem;
+   }
+}
+
+/*medium screens*/
 @media (max-width: 768px) {
     h3.services {
         margin-bottom: 0.5rem;
@@ -203,7 +263,7 @@ a.services {
    }
 }
 
-/*Small Screens*/
+/*small screens*/
 @media (max-width: 576px) {
     h3.services {
         margin-bottom: 0.5rem;
@@ -221,21 +281,58 @@ a.services {
 img.services {
     height: 26rem;
     width: 23rem;
-    object-fit:cover;
+    object-fit: cover;
     object-position: center;
 }
 
-/*Small Screens*/
-@media (max-width: 576px) {
-img.services {
-    height: 16rem;
-    width: 15rem;
+img.instruction {
+    height: 26rem;
+    width: 23rem;
+    object-fit: cover;
+    object-position: center;
 }
+
+/*large screens*/
+@media (max-width: 1200px) {
+    img.instruction {
+        height: 26rem;
+        width: 400rem;
+        object-fit: cover;
+        object-position: center;
+        padding-bottom: 1rem;
+    }
+}
+
+/*medium screens*/
+@media (max-width: 768px) {
+    img.services {
+        height: 26rem;
+        width: 400rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    img.instruction {
+        height: 26rem;
+        width: 400rem;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/*small screens*/
+@media (max-width: 576px) {
+    img.services {
+        height: 16rem;
+        width: 15rem;
+    }
+    img.instruction {
+        height: 16rem;
+        width: 15rem;
+    }
 }
 
 
 /*About Us Section*/
-
 /*containers*/
 div.about {
     padding: 1rem;
@@ -257,28 +354,6 @@ div.abouttext {
     padding-left: 1.5rem;
 }
 
-@media (max-width: 768px) {
-    div.abouttext {
-        text-align: center;
-        padding: 1.5rem;
-    }
-
-    a.about {
-        background-color: transparent; 
-        border: 2px solid var(--cappuccino); 
-        margin-top: 2rem;
-        display: block; 
-        width: 10rem;
-        border-radius: 12px;
-        color: var(--cappuccino); 
-        text-align: center; 
-        text-decoration: none;
-        padding: 1rem;
-        font-size: 1.2rem; 
-        justify-self: center;
-    }
-}
-
 h3.about {
     color: var(--citrus);
     font-size: 3rem;
@@ -288,6 +363,7 @@ h3.about {
 p.about {
     color: var(--cappuccino);
     line-height: 2rem;
+    font-size: 1.2rem;
 }
 
 a.about {
@@ -304,6 +380,39 @@ a.about {
     font-size: 1.2rem; 
 }
 
+/*medium screens */
+@media (max-width: 768px) {
+    div.abouttext {
+        text-align: center;
+        padding: 1.5rem;
+    }
+    a.about {
+        background-color: transparent; 
+        border: 2px solid var(--citrus); 
+        margin-top: 2rem;
+        display: block; 
+        width: 10rem;
+        border-radius: 12px;
+        color: var(--citrus); 
+        text-align: center; 
+        text-decoration: none;
+        padding: 1rem;
+        font-size: 1.2rem; 
+        justify-self: center;
+    }
+}
+
+/*small screens */
+@media (max-width: 576px) {
+    p.about {
+        font-size: 1rem;
+    }
+    h3.about {
+        font-size: 1.8rem;
+    }
+}
+
+
 /*Testimonials*/
 /*containers*/
 div.testimonialswrap {
@@ -313,7 +422,7 @@ div.testimonialswrap {
 }
 
 div.testimonialsrow {
-    background-color: var(--darkarctic);
+    background-color: var(--lunar);
     padding: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -400,10 +509,6 @@ a.socials {
 
 
 
-
-
-
-
 /* Contact Us Page*/
 /*containers*/
 
@@ -419,7 +524,7 @@ div.contactwrap {
 }
 
 div.contactrow {
-    background-color: var(--darkarctic);
+    background-color: var(--lunar);
     padding: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
