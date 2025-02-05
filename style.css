@@ -422,7 +422,7 @@ div.testimonialswrap {
 }
 
 div.testimonialsrow {
-    background-color: var(--lunar);
+    background-color: var(--arctic);
     padding: 1rem;
     margin: 0.1rem;
 }
@@ -435,13 +435,6 @@ div.testimonials {
 div.carousel-inner {
     padding-left: 12rem;
     padding-right: 12rem;
-}
-
-/*title*/
-h3.testimonials {
-    color: var(--citrus);
-    font-size: 3rem;
-    padding-top: 3rem;
 }
 
 /*reviews*/
@@ -497,67 +490,7 @@ button.carousel-control-next {
 }
 
 
-
-
-
-
-
-
-
-/*Footer*/
-/*containers*/
-.footer {
-    align-items: center;
-    color: var(--cappuccino);
-}
-
-div.footercopyright {
-    text-align: right;
-}
-
-div.footerbrand {
-    text-align: center;
-}
-
-div.footersocials {
-    text-align: left;
-}
-
-@media (max-width: 768px) {
-    div.footercopyright {
-        text-align: center;
-    }
-
-    div.footersocials {
-        text-align: center;
-    }
-}
-
-/*copyright*/
-p.copyright {
-    font-size: 1.2rem;
-}
-
-/*socials*/
-ul.socials {
-    display: inline-flex;
-    list-style-type: none;
-    padding: 0;
-}
-
-a.socials {
-    color: var(--cappuccino);
-    font-size: 1.8rem;
-    text-decoration: none;
-    text-align: center;
-    text-wrap: nowrap;
-    padding: 1rem;
-}
-
-
-
-
-/* Contact Us Page*/
+/* Contact Us */
 /*containers*/
 
 div.headercontact {
@@ -620,4 +553,55 @@ button.submit {
     padding: 1rem;
     font-size: 1.2rem; 
     justify-self: center;
+}
+
+
+/*Footer*/
+/*containers*/
+.footer {
+    align-items: center;
+    color: var(--cappuccino);
+}
+
+div.footercopyright {
+    text-align: right;
+}
+
+div.footerbrand {
+    text-align: center;
+}
+
+div.footersocials {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    div.footercopyright {
+        text-align: center;
+    }
+
+    div.footersocials {
+        text-align: center;
+    }
+}
+
+/*copyright*/
+p.copyright {
+    font-size: 1.2rem;
+}
+
+/*socials*/
+ul.socials {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+a.socials {
+    color: var(--cappuccino);
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-align: center;
+    text-wrap: nowrap;
+    padding: 1rem;
 }

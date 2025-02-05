@@ -36,7 +36,7 @@
                         <li class="nav-item"><a href="#self" class="nav-link">HOME</a></li>
                         <li class="nav-item"><a href="#services" class="nav-link">SERVICES</a></li>
                         <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
-                        <li class="nav-item"><a href="contact" class="nav-link">CONTACT US</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">CONTACT US</a></li>
                     </ul>
                 </div> 
             </div>
@@ -83,7 +83,7 @@
     </div>
 
     <!--About-->
-    <div class="container-fluid about d-flex flex-column">
+    <div id="about" class="container-fluid about d-flex flex-column">
         <div class="row aboutrow align-items-center">
             <div class="col-md-6 aboutvideo">
                 <div class="embed-responsive aboutvideo embed-responsive-16by9">
@@ -105,7 +105,6 @@
     <!--Testimonials-->
     <div id="testimonials" class="container-fluid testimonialswrap d-flex flex-column">
         <div class ="row testimonialsrow align-items-center">
-            <h3 class="testimonials">TESTIMONIALS</h3>
             <div class="col-md-12 testimonials align-self-start">
                 <div id="reviewscarousel" class="carousel slide" touch="true">
                     <div class="carousel-inner">
@@ -135,6 +134,47 @@
                         <span class="carousel-control-next-icon"></span>
                     </button>
                   </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact Us-->
+    <div id="contact" class="container-fluid contactwrap d-flex flex-column">
+        <div class ="row contactrow align-items-center">
+            <h3 class="contact">GET IN TOUCH</h3>
+            <div class="col-md-4 contact align-self-start">
+                <div class="embed-responsive-item map embed-responsive-1by1">
+                    <iframe class="embed-responsive-item map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.164109103586!2d-97.23530378849418!3d33.05214607343951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864dcfd79d0a18e9%3A0x241b53933da27e2a!2sAero%20Valley%20Airport%20(52F)!5e0!3m2!1sen!2sus!4v1729966921956!5m2!1sen!2sus"></iframe>
+                </div>
+                <h4><i class="fa-solid fa-phone"></i> 940-735-9114</h4>
+                <h4><i class="fa-solid fa-envelope"></i> info@findingflight.com</h4>
+            </div>
+            <div class="col-md-8 contactform align-self-start">
+                <form>
+                    <div class="row">
+                      <div class="col">
+                        <label for="firstname">First Name</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="First name">
+                      </div>
+                      <div class="col">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Last name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailinput">Email Address</label>
+                        <input type="email" class="form-control" id="emailinput" placeholder="Email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneinput">Phone Number</label>
+                        <input type="number" class="form-control" id="phoneinput" placeholder="Phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="textinput">Message</label>
+                        <textarea class="form-control" id="textinput" placeholder="Message" rows="3"></textarea>
+                      </div>
+                      <button type="submit" class="btn submit">Submit</button>
+                  </form>
             </div>
         </div>
     </div>
