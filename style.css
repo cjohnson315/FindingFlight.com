@@ -358,26 +358,41 @@ h3.about {
     color: var(--citrus);
     font-size: 3rem;
     padding-bottom: 1rem;
+    text-align: center;
 }
 
 p.about {
     color: var(--cappuccino);
     line-height: 2rem;
     font-size: 1.2rem;
+    text-align: center;
 }
 
-a.about {
-    background-color: transparent; 
-    border: 2px solid var(--citrus); 
-    margin-top: 2rem;
-    display: block; 
-    width: 10rem;
-    border-radius: 12px;
-    color: var(--citrus); 
-    text-align: center; 
-    text-decoration: none;
-    padding: 1rem;
-    font-size: 1.2rem; 
+/*testimonials section*/
+div.carousel-inner {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 0.5rem;
+}
+
+/*reviews*/
+h3.testimonials {
+    color: var(--citrus);
+    text-align: center;
+    padding-top: 2rem;
+}
+p.review {
+    color: var(--cappuccino);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/*buttons*/
+button.carousel-control-prev {
+    justify-self: start;
+}
+button.carousel-control-next {
+    justify-self: end;
 }
 
 /*medium screens */
@@ -400,6 +415,17 @@ a.about {
         font-size: 1.2rem; 
         justify-self: center;
     }
+    h3.testimonials {
+        font-size: 2.8rem;
+        padding-top: 1.8rem;
+    }
+    p.review {
+        font-size: 1.2rem;
+    }
+    div.carousel-inner {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 }
 
 /*small screens */
@@ -410,68 +436,6 @@ a.about {
     h3.about {
         font-size: 1.8rem;
     }
-}
-
-
-/*Testimonials*/
-/*containers*/
-div.testimonialswrap {
-    background-color: var(--arctic);
-    text-align: center;
-    padding-top: 0.75rem;
-}
-
-div.testimonialsrow {
-    background-color: var(--arctic);
-    padding: 1rem;
-    margin: 0.1rem;
-}
-
-div.testimonials {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-div.carousel-inner {
-    padding-left: 12rem;
-    padding-right: 12rem;
-}
-
-/*reviews*/
-p.review {
-    color: var(--cappuccino);
-    font-size: 1.8rem;
-}
-
-/*buttons*/
-button.carousel-control-prev {
-    justify-self: start;
-}
-button.carousel-control-next {
-    justify-self: end;
-}
-
-/*medium screens*/
-@media (max-width: 768px) {
-    h3.testimonials {
-        font-size: 2.8rem;
-        padding-top: 1.8rem;
-    }
-    p.review {
-        font-size: 1.2rem;
-    }
-    div.testimonials {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-    div.carousel-inner {
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-}
-
-/*small screens*/
-@media (max-width: 576px) {
     h3.testimonials {
         font-size: 1.8rem;
         padding-top: 1.2rem;
@@ -479,14 +443,10 @@ button.carousel-control-next {
     p.review {
         font-size: 1rem;
     }
-    div.testimonials {
-        padding: 0.5rem;
-    }
     div.carousel-inner {
         padding-left: 5rem;
         padding-right: 5rem;
     }
-
 }
 
 

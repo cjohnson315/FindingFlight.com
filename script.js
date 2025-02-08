@@ -2,7 +2,7 @@
 /*Set the height of the testimonials container to be the same height as the
 longest testimonial*/
 
-let $d = $("div.testimonials")
+let $d = $("div.abouttext")
 let tallestHeight = 0
 
 $d.each(function(){
