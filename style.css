@@ -395,36 +395,44 @@ button.carousel-control-next {
     justify-self: end;
 }
 
-/*medium screens */
+/*large screens*/
+@media (max-width: 1200px) {
+    div.abouttext {
+        padding: 1rem;
+   }
+   p.about {
+    font-size: 1.2rem;
+    }
+    h3.about {
+    font-size: 2.8rem;
+    }
+   h3.testimonials {
+        font-size: 2.2rem;
+        padding-top: 1.2rem;
+   }
+   p.review {
+    font-size: 1.2rem;
+   }
+}
+
+/*medium screens*/
 @media (max-width: 768px) {
     div.abouttext {
         text-align: center;
-        padding: 1.5rem;
-    }
-    a.about {
-        background-color: transparent; 
-        border: 2px solid var(--citrus); 
-        margin-top: 2rem;
-        display: block; 
-        width: 10rem;
-        border-radius: 12px;
-        color: var(--citrus); 
-        text-align: center; 
-        text-decoration: none;
         padding: 1rem;
-        font-size: 1.2rem; 
-        justify-self: center;
+    }
+    p.about {
+        font-size: 1rem;
+    }
+    h3.about {
+        font-size: 2.2rem;
     }
     h3.testimonials {
-        font-size: 2.8rem;
-        padding-top: 1.8rem;
+        font-size: 2rem;
+        padding-top: 1.2rem;
     }
     p.review {
-        font-size: 1.2rem;
-    }
-    div.carousel-inner {
-        padding-left: 5rem;
-        padding-right: 5rem;
+        font-size: 1rem;
     }
 }
 
@@ -434,21 +442,20 @@ button.carousel-control-next {
         font-size: 1rem;
     }
     h3.about {
-        font-size: 1.8rem;
+        font-size: 2rem;
+    }
+    div.abouttext {
+        text-align: center;
+        padding: 1rem;
     }
     h3.testimonials {
-        font-size: 1.8rem;
-        padding-top: 1.2rem;
+        font-size: 1.6rem;
+        padding-top: 1rem;
     }
     p.review {
         font-size: 1rem;
     }
-    div.carousel-inner {
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
 }
-
 
 /* Contact Us */
 /*containers*/
@@ -474,19 +481,20 @@ div.contactrow {
 
 /*contact info*/
 div.contact {
-    padding: 3rem;
     color: var(--citrus);
+    padding-top: 3rem;
 }
 
 h3.contact {
     color: var(--citrus);
+    text-align: center;
     font-size: 3rem;
     padding-top: 2rem;
     padding-bottom: 0.5rem;
 }
 
 div.map {
-    height: 20rem;
+    height: 30rem;
     padding: 1rem;
 }
 
@@ -521,6 +529,84 @@ button.submit {
     justify-self: center;
 }
 
+/*large screens*/
+@media (max-width: 1200px) {
+    h3.contact {
+        font-size: 2.2rem;
+        padding-top: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+    h4.contactinfo {
+        font-size: 2rem;
+    }
+    div.map {
+        height: 25rem;
+        padding: 1rem;
+    }
+    button.submit { 
+        margin-top: 2rem;
+        width: 9rem;
+        border-radius: 11px;
+        padding: 1rem;
+        font-size: 1.2rem; 
+    }
+}
+
+/*medium screens*/
+@media (max-width: 768px) {
+    h3.contact {
+        font-size: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    h4.contactinfo {
+        font-size: 1.6rem;
+    }
+    div.contactform {
+        padding: 0.5rem;
+    }
+    div.map {
+        height: 25rem;
+        padding: 0.5rem;
+        padding-bottom: 1rem;
+    }
+    button.submit { 
+        margin-top: 2rem;
+        width: 8rem;
+        border-radius: 10px;
+        padding: 1rem;
+        font-size: 1.2rem; 
+    }
+}
+
+/*small screens */
+@media (max-width: 576px) {
+    h3.contact {
+        font-size: 1.8rem;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    h4.contactinfo {
+        font-size: 1.4rem;
+    }
+    div.contactform {
+        padding: 0.5rem;
+    }
+    div.map {
+        height: 20rem;
+        padding: 0.5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    button.submit { 
+        margin-top: 2rem;
+        width: 8rem;
+        border-radius: 10px;
+        padding: 1rem;
+        font-size: 1.2rem; 
+    }
+}
+
 
 /*Footer*/
 /*containers*/
@@ -541,6 +627,7 @@ div.footersocials {
     text-align: left;
 }
 
+/*Medium Screens*/
 @media (max-width: 768px) {
     div.footercopyright {
         text-align: center;
@@ -554,6 +641,20 @@ div.footersocials {
 /*copyright*/
 p.copyright {
     font-size: 1.2rem;
+}
+
+/*Medium Screens*/
+@media (max-width: 768px) {
+    p.copyright {
+        padding-top: 1.5rem;
+    }
+}
+
+/*Small Screens*/
+@media (max-width: 576px) {
+    p.copyright {
+        padding-top: 1.5rem;
+    }
 }
 
 /*socials*/
