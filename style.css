@@ -1,5 +1,5 @@
 :root{
-    --arctic:#0d2740;
+    --arctic:#0d2140;
     --lunar: #001222;
     --cappuccino: #ffe8ce;
     --citrus: #feb65a;
@@ -13,7 +13,7 @@ body {
 
 /*Header Container*/
 div.header {
-    background: url(Images/HeaderPlaceholder.jpg) #00000046;
+    background: url(Images/CubHeader.png) #00000046;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -481,6 +481,8 @@ div.contact {
 h3.contact {
     color: var(--citrus);
     font-size: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
 }
 
 div.map {
@@ -498,6 +500,10 @@ div.contactform {
     padding: 3rem;
     color: var(--cappuccino);
     text-align: left;
+}
+
+input.honeypot {
+    display: none;
 }
 
 button.submit {

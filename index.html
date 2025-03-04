@@ -47,7 +47,7 @@
             <div class="col-lg-5 header-banner">
                 <h1 class="header-banner">DISCOVER YOUR <strong class="header">PASSION</strong><br />FOR 
                     <strong class="header">AVIATION</strong></h1>
-                <a href="contact" class="button header-banner">FIND OUT HOW</a>
+                <a href="#contact" class="button header-banner">FIND OUT HOW</a>
             </div>
         </div>
     </div>
@@ -59,21 +59,21 @@
                 <a href="#services" class="services"><h3 class="services">WHAT CAN FINDING FLIGHT DO FOR YOU?</h3></a>
             </div>
             <div class="col-xl-4 services align-self-start">
-                <a href="#services" class="services"><img class="img-fluid instruction" src="Images/InstructingPlaceholder.jpg">
+                <a href="#services" class="services"><img class="img-fluid services" src="Images/Cub.png">
+                    <span><h1 class="services-list">TAILWHEEL INSTRUCTION</h1></span>
+                </a>
+                <p class="services">Master your stick and rudder skills and discover the adventure of unfettered flying 
+                    with our comprehensive tailwheel endorsement course, including grass runway landings in a Piper  PA-18 Super Cub</p>
+            </div>
+            <div class="col-xl-4 col-md-6 services align-self-start">
+                <a href="#services" class="services"><img class="img-fluid instruction" src="Images/IsaacPortrait.png">
                     <span><h1 class="services-list">FLIGHT INSTRUCTION</h1></span>
                 </a>
                 <p class="services">Discover your potential and achieve your piloting dreams with custom-tailored, 
-                    individualized tailwheel instruction from our world-class Certified Flight Instructor</p>
+                    individualized Private Pilot or Commercial instruction in your personal aircraft</p>
             </div>
             <div class="col-xl-4 col-md-6 services align-self-start">
-                <a href="#services" class="services"><img class="img-fluid services" src="Images/AdventurePlaceholder.jpg">
-                    <span><h1 class="services-list">ADVENTURE FLIGHTS</h1></span>
-                </a>
-                <p class="services">Experience the magic of flight and the majesty of the world-famous DFW skyline in 
-                    a captivating adventure through the sky guided by our expert pilot</p>
-            </div>
-            <div class="col-xl-4 col-md-6 services align-self-start">
-                <a href="#services" class="services"><img class="img-fluid services" src="Images/A&PPlaceholder.jpg">
+                <a href="#services" class="services"><img class="img-fluid services" src="Images/IsaacPortrait.png">
                     <span><h1 class="services-list">A&P SERVICES</h1></span>
                 </a>
                 <p class="services">Engine trouble got you downed and down? Wing dents ruining your Instagram shots? Trust
@@ -87,7 +87,7 @@
         <div class="row aboutrow align-items-center">
             <div class="col-md-6 aboutvideo">
                 <div class="embed-responsive aboutvideo embed-responsive-16by9">
-                    <iframe class="embed-responsive-item aboutvideo" src="https://www.youtube.com/embed/WMrV3OZ6tjM" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item aboutvideo" src="https://www.youtube.com/embed/rd28gjDzqAg?si=ivFdOR8Jeidh-r4g" allowfullscreen></iframe>
                   </div>
             </div>
             <div class="col-md-6 abouttext">
@@ -142,28 +142,30 @@
                 <h4><i class="fa-solid fa-envelope"></i> info@findingflight.com</h4>
             </div>
             <div class="col-md-8 contactform align-self-start">
-                <form>
+                <form action="https://formsubmit.co/info@findingflightaviation.com" method="POST">
                     <div class="row">
+                        <input type="text" class="honeypot" name="honey">
+                        <input type="hidden" class="captcha" name="captcha" value="false">
                       <div class="col">
                         <label for="firstname">First Name</label>
-                        <input type="text" class="form-control" id="firstname" placeholder="First name">
+                        <input type="text" class="form-control" name="Name" id="firstname" placeholder="First name">
                       </div>
                       <div class="col">
                         <label for="lastname">Last Name</label>
-                        <input type="text" class="form-control" id="lastname" placeholder="Last name">
+                        <input type="text" class="form-control" name="LastName" id="lastname" placeholder="Last name">
                       </div>
                     </div>
                     <div class="form-group">
                         <label for="emailinput">Email Address</label>
-                        <input type="email" class="form-control" id="emailinput" placeholder="Email address">
+                        <input type="email" class="form-control" name="Email" id="emailinput" placeholder="Email address">
                     </div>
                     <div class="form-group">
                         <label for="phoneinput">Phone Number</label>
-                        <input type="number" class="form-control" id="phoneinput" placeholder="Phone number">
+                        <input type="number" class="form-control" name="Phone" id="phoneinput" placeholder="Phone number">
                     </div>
                     <div class="form-group">
                         <label for="textinput">Message</label>
-                        <textarea class="form-control" id="textinput" placeholder="Message" rows="3"></textarea>
+                        <textarea class="form-control" name="Comments" id="textinput" placeholder="Message" rows="3"></textarea>
                       </div>
                       <button type="submit" class="btn submit">Submit</button>
                   </form>
@@ -176,7 +178,7 @@
         <footer>
             <div class="row footer align-items-center">
                 <div class="col-md-4 footercopyright">
-                    <p class="copyright">© 2024 Finding Flight, LLC</p>
+                    <p class="copyright">© 2025 Finding Flight, LLC</p>
                 </div>
                 <div class="col-md-4 footerbrand">
                     <a href=#header class="footerbrand"><img src="Images/LogoPlaceholder.png" class="logo p-3"></a>
