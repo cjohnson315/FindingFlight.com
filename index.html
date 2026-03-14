@@ -14,34 +14,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--Navbar--> 
+    <div id="navbarWrapper"></div>
+
+    <!--Hero Section-->
+    <div id="homeHero" class="container-fluid hero hero-home">
+        <h1 class="homeHero">DISCOVER YOUR PASSION FOR AVIATION</h1>
+        <div class="heroArrow">
+            <a href="#services" class="heroArrow"><i class="fa-solid fa-angle-down"></i></a>
+        </div>
+    </div>
 
     <!--Header-->
     <div id="header" class="container-fluid header d-flex flex-column">
-
-        <!--Navbar-->
-        <!--Create navbar wrapper (required for bs navbar functionality)-->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid navbar-brand col-lg-4 flex-nowrap">
-                <!--Add Finding Flight logo using bs brand class-->
-                <a class="navbar-brand"><img src="Images/LogoPlaceholder.png" class="logo"></a>
-            </div>
-            <div class="container-fluid navbar-menu col-lg-8 flex">
-                <!--Create button for collapsible navbar menu-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <!--Create navigation menu within collapsible container-->
-                <div class="collapse navbar-collapse" id="navmenu">
-                    <ul class="navbar-nav ms-auto p-3">
-                        <li class="nav-item"><a href="#self" class="nav-link">HOME</a></li>
-                        <li class="nav-item"><a href="#services" class="nav-link">SERVICES</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">CONTACT US</a></li>
-                    </ul>
-                </div> 
-            </div>
-        </nav>   
-
         <!--Add banner hero text section to header-->
         <div class="row align-items-end flex-grow-1">
             <div class="col-lg-5 header-banner">
@@ -88,7 +73,7 @@
             <div class="col-md-6 aboutvideo">
                 <div class="embed-responsive aboutvideo embed-responsive-16by9">
                     <iframe class="embed-responsive-item aboutvideo" src="https://www.youtube.com/embed/rd28gjDzqAg?si=ivFdOR8Jeidh-r4g" allowfullscreen></iframe>
-                  </div>
+                </div>
             </div>
             <div class="col-md-6 abouttext">
                 <h3 class="about">ABOUT US</h3>
@@ -98,34 +83,6 @@
                     made it our mission to help ignite that same passion in others.
                 </p>
                 <h3 class="testimonials">BUT DON'T TAKE IT FROM US</h3>
-                <div id="reviewscarousel" class="carousel slide" touch="true">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <p class="review">"I can't recommend Isaac's course enough. Whether you're chasing adventure or 
-                            looking to become a more skilled pilot, this is the upgrade you need."</p>
-                        <p class="review">-David Palmer</p>
-                      </div>
-                      <div class="carousel-item">
-                        <p class="review">"Isaac is the best. Not only is he a great pilot, but he's also a great
-                            instructor and mechanic."</p>
-                        <p class="review">-Buck Rowe</p>
-                      </div>
-                      <div class="carousel-item">
-                        <p class="review">"Isaac is a great instructor. Amazing airplane as well."</p>
-                        <p class="review">-Michael Barnett</p>
-                      </div>
-                      <div class="carousel-item">
-                        <p class="review">"Isaac is the best pilot and flight instructor in the world!"</p>
-                        <p class="review">-Isaac's Wife</p>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#reviewscarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                      </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#reviewscarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
             </div>
         </div>
     </div>
@@ -173,33 +130,13 @@
         </div>
     </div>
 
+    <!--Call to Action-->
+    <div id="ctaWrapper"></div>
+
     <!--Footer-->
-    <div class="container-fluid footer d-flex flex-column">
-        <footer>
-            <div class="row footer align-items-center">
-                <div class="col-md-4 footercopyright">
-                    <p class="copyright">© 2025 Finding Flight, LLC</p>
-                </div>
-                <div class="col-md-4 footerbrand">
-                    <a href=#header class="footerbrand"><img src="Images/LogoPlaceholder.png" class="logo p-3"></a>
-                </div>
-                <div class="col-md-4 footersocials">
-                    <ul class="socials">
-                        <li class="socials">
-                            <a href="https://www.instagram.com/findingflightaviation/" class="socials"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li class="socials">
-                            <a href="https://www.youtube.com/@FindingFlightAviation" class="socials"><i class="fa-brands fa-youtube"></i></a></li>
-                        <li class="socials">
-                            <a href="https://www.instagram.com/findingflightaviation/" class="socials"><i class="fa-brands fa-x-twitter"></i></a></li>
-                        <li class="socials">
-                            <a href="https://www.facebook.com/people/FindingFlight/61567766007234/?name=xhp_nt__fb__action__open_user" class="socials"><i class="fa-brands fa-facebook"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    </div>
+    <div id="footerWrapper"></div>
 </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<!--<script src="script.js"></script>-->
+<script src="/main.js"></script>
