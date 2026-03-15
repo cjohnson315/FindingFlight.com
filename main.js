@@ -1,20 +1,6 @@
+// TODO pull reviews from external JSON file instead of hardcoding
 
-// /*Set the height of the testimonials container to be the same height as the
-// longest testimonial*/
-
-// let $d = $("div.abouttext")
-// let tallestHeight = 0
-
-// $d.each(function(){
-//     let $text = $(this)
-//     let thisHeight = $text.outerHeight()
-
-//     if(thisHeight > tallestHeight) tallestHeight = thisHeight
-// })
-
-// $d.css("height", tallestHeight + "px")
-
-// Load and inject HTML component
+// Function to load and inject modular HTML components
 async function injectHTML(selector, url) {
     // Get placeholder tag or bust
     const anchorTag = document.querySelector(selector);
@@ -33,28 +19,8 @@ async function injectHTML(selector, url) {
     };
 };
 
-// Inject components
-injectHTML('#navbarWrapper', '/components/navbar.html');
-injectHTML('#footerWrapper', '/components/footer.html');
-await injectHTML('#ctaWrapper', '/components/cta.html');
-
-// Inject reviews into CTA carousel shell
-const reviews = [
-  { text: `I can't recommend Isaac's course enough. Whether you're chasing adventure or looking \
-    to become a more skilled pilot, this is the upgrade you need.`,
-    author: 'David Palmer' },
-  { text:  `Isaac is the best. Not only is he a great pilot, but he's also a great instructor and mechanic.`, 
-    author: 'Buck Rowe' },
-  { text: `Isaac is a great instructor. Amazing airplane as well.`, 
-    author: 'Michael Barnett' },
-  { text: `Review 4`, 
-    author: 'FF Admin' },
-  { text: `Review 5`, 
-    author: 'FF Admin' }
-];
-
-    // Injection Function
-function buildReviewsCarousel(reviews) {   
+// Function to inject reviews into a carousel shell
+async function buildReviewsCarousel(reviews) {   
     // Get template and injection anchors
     const template = document.getElementById('reviewTemplate');
     const reviewSlides = document.getElementById('ctaCarousel');
@@ -85,7 +51,7 @@ function buildReviewsCarousel(reviews) {
     });
 };
 
-    // BS Initialize Carousel Function
+// Function to initialize carousel BS after injecting reviews
 function initReviewsCarousel() {
     const revCarousel = document.getElementById('ctaReviews');
     // Make sure carousel has been injected
@@ -96,6 +62,31 @@ function initReviewsCarousel() {
     });
 };
 
-    // Inject
-buildReviewsCarousel(reviews);
-initReviewsCarousel();
+// Hardcoded reviews JSON
+const reviews = [
+  { text: `I can't recommend Isaac's course enough. Whether you're chasing adventure or looking \
+    to become a more skilled pilot, this is the upgrade you need.`,
+    author: 'David Palmer' },
+  { text:  `Isaac is the best. Not only is he a great pilot, but he's also a great instructor and mechanic.`, 
+    author: 'Buck Rowe' },
+  { text: `Isaac is a great instructor. Amazing airplane as well.`, 
+    author: 'Michael Barnett' },
+  { text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et est egestas, volutpat ex \
+    et, hendrerit lectus. Sed aliquam fermentum nunc sed laoreet. Nam et est egestas, volutpat ex \
+    et, hendrerit lectus. Sed aliquam fermentum nunc sed laoreet.`, 
+    author: 'FF Admin' },
+  { text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et est egestas, volutpat ex \
+    et, hendrerit lectus. Sed aliquam fermentum nunc sed laoreet.`, 
+    author: 'FF Admin' }
+];
+
+
+// Inject navbar and footer components
+injectHTML('#navbarWrapper', '/components/navbar.html');
+injectHTML('#footerWrapper', '/components/footer.html');
+// Inject cta component and review carousel
+injectHTML('#ctaWrapper', '/components/cta.html').then(()=> {
+    buildReviewsCarousel(reviews);
+    initReviewsCarousel();
+});
+

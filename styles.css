@@ -16,6 +16,77 @@ body {
 
 
 /* CTA */
+.container-cta {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    /* background-image: radial-gradient(var(--lunar), var(--arctic)); */
+    background: url(/images/MountainFlight.png) RGB(0,0,0,0.4);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+.row-cta {
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    text-align: center;
+    gap: 1.5rem;
+}
+h3.cta {
+    color: var(--cappuccino);
+    font-size: 3rem;
+}
+a.ctaButton {
+    background-color: transparent;
+    border-color: var(--cappucino);
+
+    font-size: 1.5rem;
+    color: var(--cappuccino);
+
+    width: 10rem;
+    height: 3.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.ctaButton:hover {
+    color: var(--citrus);
+    border-color: var(--citrus);
+    background-color: transparent;
+}
+.carousel {
+    padding-bottom: 1rem;
+}
+.carousel-item {
+    height: 8rem;
+}
+.ctaReview {
+    color: var(--cappuccino);
+    text-align: center;
+    font-size: 1.2rem;
+}
+.ctaReviewAuthor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--cappuccino);
+    text-align: center;
+    font-size: 1rem;
+}
+.carousel-indicators {
+    color: var(--cappuccino);
+}
+#ctaReviews .carousel-indicators button {
+    background-color: var(--cappuccino);
+    width: 6px;
+    height: 6px;
+    border-radius:50%;
+}
 
 
 /* Navbar */
@@ -143,7 +214,6 @@ a.footerSocials:hover {
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 
     height: 100vh;
     position: relative;
@@ -168,7 +238,7 @@ a.footerSocials:hover {
     z-index: 0;
 }
     /* Raise text over overlay */
-        /* All children of the selector */
+    /* All children of the selector */
 .hero >* {
     position: relative;
     z-index: 1;
@@ -211,6 +281,7 @@ a.heroArrow {
 /* ABOUT */
 .hero-about {
     background-image: url(/images/AboutHero.JPEG);
+    background-position: center;
 }
 
 h1.aboutHero {
@@ -224,8 +295,14 @@ h2.aboutHero {
 /* HOME */
 .hero-home {
     background-image: url(/images/CubHeader.png);
+    background-position: bottom;
+
 }
 
 h1.homeHero {
-    font-size: 5.5rem;
+    font-size: 4rem;
+}
+
+h2.homeHero {
+    font-size: 1.8rem;
 }
