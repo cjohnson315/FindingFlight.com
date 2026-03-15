@@ -1,32 +1,36 @@
-<!--Reviews-->
-<div id="reviewscarousel" class="carousel slide" touch="true">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <p class="review">"I can't recommend Isaac's course enough. Whether you're chasing adventure or 
-            looking to become a more skilled pilot, this is the upgrade you need."</p>
-        <p class="review">-David Palmer</p>
-      </div>
-      <div class="carousel-item">
-        <p class="review">"Isaac is the best. Not only is he a great pilot, but he's also a great
-            instructor and mechanic."</p>
-        <p class="review">-Buck Rowe</p>
-      </div>
-      <div class="carousel-item">
-        <p class="review">"Isaac is a great instructor. Amazing airplane as well."</p>
-        <p class="review">-Michael Barnett</p>
-      </div>
-      <div class="carousel-item">
-        <p class="review">"Isaac is the best pilot and flight instructor in the world!"</p>
-        <p class="review">-Isaac's Wife</p>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#reviewscarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#reviewscarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
+<!--Call to Action-->
+<div class="row row-cta">
+
+  <!--CTA Text-->
+  <div class="col-md-8 col-cta">
+    <h3 class="cta">Ready to leave pavement behind?</h3>
+  </div>
+
+  <!--CTA Button-->
+  <div class="col-md-4 col-cta">
+    <a class="btn btn-primary ctaButton" href="/contact.html">Sign Up Now</a>
+  </div>
 </div>
 
-<!--Call to Action-->
-<a href="#contact" class="button header-banner">FIND OUT HOW</a>
+<!--Reviews Carousel-->
+<div class="row row-cta">
+
+  <div id="ctaReviews" class="carousel slide"><!--BS Carousel Class-->
+
+    <!--Carousel slides anchor-->
+    <div id="ctaCarousel" class="carousel-inner"></div><!--BS Carousel Class-->
+
+    <!--Carousel buttons anchor-->
+    <div id="ctaCarouselButtons" class="carousel-indicators"></div><!--BS Carousel Class-->
+
+  </div>
+
+</div>
+
+<!--Review Template-->
+<template id="reviewTemplate">
+  <div class="carousel-item">
+    <blockquote class="ctaReview"></blockquote>
+    <cite class="ctaReviewAuthor"></cite>
+  </div>
+</template>

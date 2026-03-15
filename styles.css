@@ -1,3 +1,5 @@
+/* TODO Figure out weird buffer on right side */
+
 /* Basics */
 :root{
     --arctic:#0d2140;
@@ -66,12 +68,72 @@ button.navbar-toggler {
 }
 
 
-
-
-
-
-
 /* Footer */
+.row-footer {
+    align-items: flex-end;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.col-footer {
+    text-align: center;
+}
+ul.footerLinks {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, auto);
+    gap: 0.5rem 0.5rem;
+}
+li.footerLink {
+    list-style-type: none;
+
+    padding-left: 0;
+    margin-left: 0;
+}
+a.footerLink {
+    color: var(--cappuccino);
+    font-size: 1rem;
+    text-decoration: none;
+
+    text-wrap: nowrap;
+}
+.footerLink:hover {
+    color: var(--citrus);
+}
+img.footerLogo {
+    height: 15%;
+    width: 15%;
+
+    min-height: 6rem;
+    min-width: 8rem;
+}
+p.footerCopyright {
+    color: var(--cappuccino);
+    font-size: 1rem;
+
+    text-wrap: nowrap;
+}
+h4.footerContact {
+    color: var(--cappuccino);
+    font-size: 1rem;
+
+    text-wrap: nowrap;
+}
+ul.footerSocials {
+    display: inline-flex;
+    gap: 3rem;
+    padding-left: 0;
+    margin-left: 0;
+
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+a.footerSocials {
+    color: var(--cappuccino);
+}
+a.footerSocials:hover {
+    color: var(--citrus);
+}
 
 
 /* Hero section template */
