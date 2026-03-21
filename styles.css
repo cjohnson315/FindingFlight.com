@@ -14,6 +14,22 @@ body {
     font-family: 'Oswald';
 }
 
+/* Outline Button */
+a.basicButton {
+    background-color: transparent;
+    border-color: var(--cappucino);
+
+    color: var(--cappuccino);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.basicButton:hover {
+    color: var(--citrus);
+    border-color: var(--citrus);
+    background-color: transparent;
+}
 
 /* CTA */
 .container-cta {
@@ -40,23 +56,10 @@ h3.cta {
     font-size: 3rem;
 }
 a.ctaButton {
-    background-color: transparent;
-    border-color: var(--cappucino);
-
     font-size: 1.5rem;
-    color: var(--cappuccino);
 
     width: 10rem;
     height: 3.5rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-a.ctaButton:hover {
-    color: var(--citrus);
-    border-color: var(--citrus);
-    background-color: transparent;
 }
 .carousel {
     padding-bottom: 1rem;
@@ -256,6 +259,9 @@ a.heroArrow {
     color: var(--cappuccino);
     text-decoration: none;
 }
+a.heroArrow:hover {
+    color: var(--citrus);
+}
 
 
 /* Basic content section template */
@@ -305,4 +311,232 @@ h1.homeHero {
 
 h2.homeHero {
     font-size: 1.8rem;
+}
+
+/* Welcome */
+.section-welcome {
+    margin: 2rem 0rem 0rem 0rem;
+}
+
+.welcome-row {
+    height: 40vh;
+    position: relative;
+
+    background-image: radial-gradient(closest-side at 50% 50%, var(--arctic), var(--lunar));
+}
+
+.welcome-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1.2rem;
+}
+
+.welcomeSubheading {
+    font-size: 1.2rem;
+    color: var(--citrus);
+}
+.welcomeHeading {
+    font-size: 2rem;
+    color: var(--cappuccino);
+
+    text-align: center;
+}
+
+.welcomeBlurb {
+    text-align: center;
+    color: var(--cappuccino);
+
+    width: 65%;
+}
+
+a.welcomeButton {
+    font-size: 1rem;
+
+    width: 7rem;
+    height: 2.5rem;
+
+    color: var(--citrus);
+    border-color: var(--citrus);
+}
+
+a.welcomeButton:hover {
+    color: var(--sunset);
+    border-color: var(--sunset);
+}
+
+/* Services */
+
+.servicesTitle {
+    color: var(--cappuccino);
+    text-align: center;
+    font-size: 3rem;
+
+    padding-top: 2rem;
+}
+
+/* CSS grid for services image cards */
+.grid-services {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;   
+
+  gap: 1.5rem;                         
+  height: 90vh;    
+  padding: 2rem 2rem 2rem 2rem;                  
+}
+
+.grid-services a:nth-child(1) {
+  grid-row: 1 / span 2;
+  grid-column: 1 / 2;
+}
+
+.grid-services a:nth-child(2) {
+  grid-row: 1 / 2;       
+  grid-column: 2 / 3;
+}
+
+.grid-services a:nth-child(3) {
+  grid-row: 1 / 2;       
+  grid-column: 3 / 4;
+}
+
+.grid-services a:nth-child(4) {
+  grid-row: 2 / 3;       
+  grid-column: 2 / 4;   
+}
+
+/* Make CSS grid responsive */
+@media (max-width: 768px) {
+  .grid-services {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .grid-services a:nth-child(1),
+  .grid-services a:nth-child(2),
+  .grid-services a:nth-child(3),
+  .grid-services a:nth-child(4) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+a.servicesButton {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.servicesButton::after {
+    content:'';
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.9));
+
+    position: absolute;
+    top: 70%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0; 
+}
+
+.servicesText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+
+    color: var(--cappuccino);
+    font-size: 1.5rem;
+}
+
+.servicesImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+/* Hover effects for service cards */
+.servicesButton:hover .servicesImg {
+  transform: scale(1.05);
+}
+
+.servicesButton:hover .servicesText{
+  color: var(--citrus);
+}
+
+/* Why Us Section*/
+.wrapper-why {
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+    height: 25rem;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-style: groove;
+    border-color: var(--arctic);
+    border-width: 2px;
+
+    background-color: var(--arctic);
+}
+
+.row-why {
+    display: flex;
+    width: 100%;
+}
+
+.col-why-left, .col-why-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1.5rem;
+}
+
+.col-why-right {
+    align-items: center;
+}
+
+.whyHeader {
+    font-size: 2rem;
+    color: var(--cappuccino);
+}
+
+.headerStrong {
+    font-size: 2rem;
+    color: var(--citrus);
+}
+
+.whyBlurb {
+    color: var(--cappuccino)
+}
+
+.statsList {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.statsText {
+    color: var(--cappuccino);
+}
+
+.statsStrong {
+    color: var(--citrus);
+    font-size: 1.2rem;
+}
+
+/*CONTACT*/
+/*Testing only*/
+.row-contact {
+    height: 20vh;
 }

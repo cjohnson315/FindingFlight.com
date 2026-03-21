@@ -57,7 +57,7 @@ function initReviewsCarousel() {
     // Make sure carousel has been injected
     if(!revCarousel) return;
     const carousel = new bootstrap.Carousel(revCarousel, {
-        interval: 8000,
+        interval: 7000,
         pause: 'hover'
     });
 };
@@ -71,13 +71,10 @@ const reviews = [
     author: 'Buck Rowe' },
   { text: `Isaac is a great instructor. Amazing airplane as well.`, 
     author: 'Michael Barnett' },
-  { text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et est egestas, volutpat ex \
-    et, hendrerit lectus. Sed aliquam fermentum nunc sed laoreet. Nam et est egestas, volutpat ex \
-    et, hendrerit lectus. Sed aliquam fermentum nunc sed laoreet.`, 
-    author: 'FF Admin' },
-  { text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et est egestas, volutpat ex \
-    et, hendrerit lectus. Sed aliquam fermentum nunc sed laoreet.`, 
-    author: 'FF Admin' }
+  { text: `Isaac at Finding Flight and his PA-18 are a 5-star good time!`, 
+    author: 'Erin Hogan' },
+  { text: `Two thumbs up for Isaac! He is a great tailwheel instructor. Everyone needs a tailwheel endorsement!`, 
+    author: 'Louis Robichaux IV' }
 ];
 
 
