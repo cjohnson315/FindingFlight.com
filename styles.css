@@ -1,5 +1,3 @@
-/* TODO Figure out weird buffer on right side */
-
 /* Basics */
 :root{
     --arctic:#0d2140;
@@ -12,6 +10,20 @@
 body {
     background-color: var(--lunar);
     font-family: 'Oswald';
+}
+
+/*CONSTRUCTION*/
+.row-construction {
+    height: 20vh;
+    padding: 6rem 0rem 20rem 0rem;
+
+    color:var(--sunset);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.row-headerbg {
+    height: 20vh;
 }
 
 /* Outline Button */
@@ -302,7 +314,7 @@ h2.aboutHero {
 
 /* HOME */
 .hero-home {
-    background-image: url(/images/CubHeader.png);
+    background-image: url(/images/homehero.png);
     background-position: bottom;
 
 }
@@ -337,11 +349,11 @@ h2.homeHero {
 }
 
 .welcomeSubheading {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: var(--citrus);
 }
 .welcomeHeading {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--cappuccino);
 
     text-align: center;
@@ -350,6 +362,7 @@ h2.homeHero {
 .welcomeBlurb {
     text-align: center;
     color: var(--cappuccino);
+    font-size: 1.2rem;
 
     width: 65%;
 }
@@ -456,6 +469,10 @@ a.servicesButton {
     transition: transform 0.5s ease;
 }
 
+.servicesImgTailwheel {
+    object-position: center;
+}
+
 /* Hover effects for service cards */
 .servicesButton:hover .servicesImg {
   transform: scale(1.05);
@@ -524,8 +541,43 @@ a.servicesButton {
 }
 
 
-/*CONTACT*/
-/*Testing only*/
-.row-contact {
-    height: 20vh;
+/*TAILWHEEL TRAINING */
+.hero-tailwheel {
+    background-image: url(/images/tailwheelhero.png);
+    background-position: top;
+}
+
+h1.tailwheelHero {
+    font-size: 5.5rem;
+}
+
+h2.tailwheelHero {
+    font-size: 2rem;
+}
+
+.overview-wrapper {
+    padding: 4rem 2rem 4rem 2rem;
+}
+
+.overviewHeader, .overviewSubheader, .overviewBlurb {
+    text-align: center;
+}
+
+.overviewHeader {
+    color: var(--cappuccino);
+    font-size: 3rem;
+}
+
+.overviewSubheader {
+    color: var(--citrus);
+    font-size: 2rem;
+}
+
+.overviewBlurb {
+        color: var(--cappuccino);
+    font-size: 1.5rem;
+}
+
+.overviewimg-col {
+    padding: 4rem 0rem 0rem 0rem;
 }
