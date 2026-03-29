@@ -298,6 +298,8 @@ h2.aboutHero {
     font-size: 2rem;
 }
 
+
+
 /* HOME */
 .hero-home {
     background-image: url(/images/CubHeader.png);
@@ -315,7 +317,7 @@ h2.homeHero {
 
 /* Welcome */
 .section-welcome {
-    margin: 2rem 0rem 0rem 0rem;
+    margin: 4rem 0rem 2rem 0rem;
 }
 
 .welcome-row {
@@ -368,14 +370,6 @@ a.welcomeButton:hover {
 }
 
 /* Services */
-
-.servicesTitle {
-    color: var(--cappuccino);
-    text-align: center;
-    font-size: 3rem;
-
-    padding-top: 2rem;
-}
 
 /* CSS grid for services image cards */
 .grid-services {
@@ -473,9 +467,10 @@ a.servicesButton {
 
 /* Why Us Section*/
 .wrapper-why {
-    margin: 2rem 2rem 2rem 2rem;
+    margin: 2rem 2rem 6rem 2rem;
     padding: 2rem 2rem 2rem 2rem;
     height: 25rem;
+    position: relative;
 
     border-radius: 10px;
 
@@ -483,57 +478,51 @@ a.servicesButton {
     align-items: center;
     justify-content: center;
 
-    border-style: groove;
-    border-color: var(--arctic);
-    border-width: 2px;
+    overflow: hidden;
 
-    background-color: var(--arctic);
+    /* border-style: groove;
+    border-color: var(--arctic);
+    border-width: 2px; */
+
+    background-image: radial-gradient(closest-side at 50% 50%, var(--arctic), var(--lunar));
 }
 
 .row-why {
-    display: flex;
-    width: 100%;
+    width: 90%;
+    --bs-gutter-x: 4rem;
 }
 
 .col-why-left, .col-why-right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     gap: 1.5rem;
 }
 
+.col-why-left {
+    justify-content: center;
+}
+
 .col-why-right {
-    align-items: center;
+    justify-content: center;
 }
 
 .whyHeader {
-    font-size: 2rem;
+    text-align: right;
+    font-size: 2.5rem;
     color: var(--cappuccino);
 }
 
 .headerStrong {
-    font-size: 2rem;
+    font-size: 3.2rem;
     color: var(--citrus);
 }
 
 .whyBlurb {
-    color: var(--cappuccino)
-}
-
-.statsList {
-    display: grid;
-    gap: 1.5rem;
-}
-
-.statsText {
     color: var(--cappuccino);
+    font-size: 1.5rem;
 }
 
-.statsStrong {
-    color: var(--citrus);
-    font-size: 1.2rem;
-}
 
 /*CONTACT*/
 /*Testing only*/
