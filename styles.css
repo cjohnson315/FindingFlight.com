@@ -27,7 +27,7 @@ body {
 }
 
 /* Outline Button */
-a.basicButton {
+.basicButton {
     background-color: transparent;
     border-color: var(--cappucino);
 
@@ -37,7 +37,7 @@ a.basicButton {
     justify-content: center;
     align-items: center;
 }
-a.basicButton:hover {
+.basicButton:hover {
     color: var(--citrus);
     border-color: var(--citrus);
     background-color: transparent;
@@ -316,7 +316,6 @@ h2.aboutHero {
 .hero-home {
     background-image: url(/images/homehero.png);
     background-position: bottom;
-
 }
 
 h1.homeHero {
@@ -556,28 +555,110 @@ h2.tailwheelHero {
 }
 
 .overview-wrapper {
-    padding: 4rem 2rem 4rem 2rem;
+    padding: 8rem 2rem 4rem 2rem;
 }
 
-.overviewHeader, .overviewSubheader, .overviewBlurb {
+.overview-row {
     text-align: center;
+    margin: 0rem 4rem;
 }
 
 .overviewHeader {
     color: var(--cappuccino);
     font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
 .overviewSubheader {
     color: var(--citrus);
     font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .overviewBlurb {
-        color: var(--cappuccino);
+    color: var(--cappuccino);
     font-size: 1.5rem;
 }
 
 .overviewimg-col {
     padding: 4rem 0rem 0rem 0rem;
+    margin: 2rem 0rem;
+}
+
+.overviewImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-training {
+    margin: 0rem 4rem 4rem 4rem;
+    padding: 4rem;
+}
+
+.basic-row {
+    margin-bottom: 4rem;
+}
+
+.basic-row, .advanced-row {
+    align-items: center;
+    background-color: var(--arctic);
+    padding: 2rem;
+    max-height: 40rem;
+}
+
+.training-col-left {
+    padding-right: 2rem;
+}
+
+.training-col-right {
+    padding-left: 2rem;
+}
+
+.trainingImg {
+    width: 100%;
+    aspect-ratio: 8/7;
+    object-fit: cover;
+}
+
+.trainingHeader {
+    color: var(--citrus);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.trainingBlurb {
+    color: var(--cappuccino);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.trainingList {
+    color: var(--cappuccino);
+    font-size: 1.2rem;
+    list-style-position: inside;
+}
+
+.trainingList li {
+    margin-bottom: 0.5rem;
+}
+
+/* CONTACT */
+
+.wrapper-contact {
+    color: var(--cappuccino);
+    padding: 4rem;
+}
+
+.contactMap {
+    width: 100%;
+    aspect-ratio: 7/6;
+}
+
+.col-contact {
+    gap: 10rem;
+}
+
+.wrapper-contactInfo {
+    display: flex;
+    justify-content: space-between;
 }

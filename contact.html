@@ -17,8 +17,6 @@
 
     <!--Navbar--> 
     <div id="navbarWrapper"></div>
-    
-    <!--Test Section-->
     <section class="section-spotlight">
         <div class="row row-headerbg">
             <div class="col-md-12">
@@ -27,47 +25,84 @@
     </section>
 
     <!--Contact Us-->
-    <div id="contact" class="container-fluid contactwrap d-flex flex-column">
-        <div class ="row contactrow align-items-center">
-            <div class="col-md-6 contactform align-self-start">
-                <h3 class="contact">GET IN TOUCH</h3>
-                <form action="https://formsubmit.co/info@findingflightaviation.com" method="POST">
-                    <div class="row">
-                        <input type="text" class="honeypot" name="honey">
-                        <input type="hidden" class="captcha" name="captcha" value="false">
-                      <div class="col">
-                        <label for="firstname">First Name</label>
-                        <input type="text" class="form-control" name="Name" id="firstname" placeholder="First name">
-                      </div>
-                      <div class="col">
-                        <label for="lastname">Last Name</label>
-                        <input type="text" class="form-control" name="LastName" id="lastname" placeholder="Last name">
-                      </div>
+    <section class="section-basic">
+
+        <div class="container-fluid wrapper-contact">
+
+            <div class="row row-contact">
+
+                <div class="col-md-4 col-contact">
+                    <!--Bootstrap Embed Classes-->
+                    <div class="embed-responsive contactMap">
+                        <iframe class="embed-responsive-item contactMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.164109103586!2d-97.23530378849418!3d33.05214607343951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864dcfd79d0a18e9%3A0x241b53933da27e2a!2sAero%20Valley%20Airport%20(52F)!5e0!3m2!1sen!2sus!4v1729966921956!5m2!1sen!2sus">
+                        </iframe>
                     </div>
-                    <div class="form-group">
-                        <label for="emailinput">Email Address</label>
-                        <input type="email" class="form-control" name="Email" id="emailinput" placeholder="Email address">
+                    <div class="wrapper-contactInfo">
+                        <p class="contactInfo">
+                            <i class="fa-solid fa-envelope contactIcon"></i>
+                            info@findingflightaviation.com
+                        </p>
+                        <p class="contactInfo">
+                            <i class="fa-solid fa-phone contactIcon"></i>
+                            940-735-9114
+                        </p>
                     </div>
-                    <div class="form-group">
-                        <label for="phoneinput">Phone Number</label>
-                        <input type="number" class="form-control" name="Phone" id="phoneinput" placeholder="Phone number">
-                    </div>
-                    <div class="form-group">
-                        <label for="textinput">Message</label>
-                        <textarea class="form-control" name="Comments" id="textinput" placeholder="Message" rows="3"></textarea>
-                      </div>
-                      <button type="submit" class="btn submit">Submit</button>
-                  </form>
-            </div>
-            <div class="col-md-6 contact align-self-start">
-                <div class="embed-responsive-item map embed-responsive-1by1">
-                    <iframe class="embed-responsive-item map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.164109103586!2d-97.23530378849418!3d33.05214607343951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864dcfd79d0a18e9%3A0x241b53933da27e2a!2sAero%20Valley%20Airport%20(52F)!5e0!3m2!1sen!2sus!4v1729966921956!5m2!1sen!2sus"></iframe>
                 </div>
-                <h4><i class="fa-solid fa-phone contactinfo"></i> 940-735-9114</h4>
-                <h4><i class="fa-solid fa-envelope contactinfo"></i> info@findingflightaviation.com</h4>
+
+                <div class="col-md-8 col-contact">
+                    <h3 class="contactHeader">GET IN TOUCH</h3>
+
+                    <!--Contact Form-->
+                    <form action="https:formsubmit.co/info@findingflightaviation.com" method="POST">
+
+                        <!--First and Last Name-->
+                        <div class="row">
+                            <div class="col">
+                                <label for="firstName">
+                                    First Name
+                                </label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <label for="lastName">
+                                    Last Name
+                                </label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last name">
+                            </div>
+                        </div>
+
+                        <!--Email & Phone-->
+                        <div class="form-group">
+                            <label for="emailInput">
+                                Email Address
+                            </label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneInput">
+                                Phone Number
+                            </label>
+                            <input type="number" class="form-control" id="phoneInput" placeholder="Phone number">
+                        </div>
+
+                        <!--Message-->
+                        <div class="form-group">
+                            <label for="textInput">
+                                Message
+                            </label>
+                            <textarea class="form-control" id="textInput" placeholder="Message" rows="3"></textarea>
+                        </div>
+
+                    </form>
+
+                    <button type="submit" class="btn basicButton contactButton">SUBMIT</button>
+                </div>
+
             </div>
+
         </div>
-    </div>
+
+    </section>
 
     <!--Footer-->
     <div id="footerWrapper"></div>
